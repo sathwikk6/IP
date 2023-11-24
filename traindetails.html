@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Details</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Train Details</h1>
+    <form action="details1.php" method="post">
+    <table>
+        <thead>
+            <tr>
+                <th>Train</th>
+                <th>Departure Time</th>
+                <th>Price (per ticket)</th>
+                <th>Available Seats</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Train 1 - Morning Express</td>
+                <td>8:00 AM</td>
+                <td>500/-</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Train 2 - Afternoon Commuter</td>
+                <td>2:00 PM</td>
+                <td>300/-</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Train 3 - Evening Special</td>
+                <td>6:30 PM</td>
+                <td>400/-</td>
+                <td>75</td>
+            </tr>
+            <!-- Add more rows with details as needed -->
+        </tbody>
+    </table>
+    <input type="text" placeholder="trainname" name="trainname">
+    <input type="text" placeholder="ticketcount" name="nooftickets">
+     <button type="submit">book</button>
+     </form>
+</body>
+</html>
